@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- versión de producción, optimizada para tamaño y velocidad -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+</head>
+<body>
+    <div id="app">
+        <h1>{{ title }}</h1>
+        <p>{{ 1+1 }}</p>
+        <p> {{ true || false }} </p>
+        <p> {{ true ? true : false }} </p>
+        <p> {{ 'string'.toUpperCase() }} </p>
+        <p> {{ JSON.stringify({name: 'Dajan'}) }} </p>
+    </div>
+
+    <script>
+        let app = new Vue({
+            el: '#app',
+            data () {
+                return {
+                    title: 'Chupa Pico'
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
