@@ -27,3 +27,6 @@ div {
     width: 400px;
     margin: 1rem;
 }
+.uppercase {
+    text-transform: uppercase;
+}

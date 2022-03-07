@@ -24,12 +24,13 @@
             <span v-else>😀</span>
 
             <!-- ESTAS MODIFICAN EL DISPLAY DEL ELEMENTO A NONE -->
-            <span v-show ="changePercent > 0">🤑</span>
-            <span v-show="changePercent < 0">🥲</span>
-            <span v-show="changePercent == 0">😀</span>
+            <span v-show ="changePercent > 0">:D</span>
+            <span v-show="changePercent < 0">:(</span>
+            <span v-show="changePercent == 0">:¿</span>
         </h1>
 
         <ul>
+            <!-- <li v-for="price in prices" key> -->
             <li v-for="price in prices" v-bind:key="price">
                 {{ price }}
             </li>
@@ -50,6 +51,7 @@
         <p>Con Array de Objetos </p>
         <ul v-show="showPrices">
             <li
+                class="uppercase"
                 v-bind:class="{ orange: p.value == precio, red: p.value < precio, green: p.value > precio }"
                 v-for="(p, i) in pricesWithDays"
                 v-bind:key="p.day">
@@ -58,8 +60,8 @@
         </ul>
     </div>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script> -->
     <script src="./app.js"></script>
 </body>
 </html>

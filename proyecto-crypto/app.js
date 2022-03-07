@@ -1,5 +1,6 @@
 new Vue({
     el: '#app',
+
     data () {
         return {
             name: 'Bitcoin',
@@ -20,7 +21,9 @@ new Vue({
             color: '9b9e9b'
         }
     },
-    /** ES UNA PROPIEDAD DE LA INSTANCIA DE VUE, QUE ES UN OBJETO DONDE PUEDO DEFINIR FUNCIONES.   */
+    /** ES UNA PROPIEDAD DE LA INSTANCIA DE VUE, 
+     * QUE ES UN OBJETO DONDE PUEDO DEFINIR FUNCIONES.
+     */
     methods: {
         toggleShowPrices () {
             this.showPrices = !this.showPrices;
