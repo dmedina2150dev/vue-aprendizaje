@@ -4,6 +4,7 @@ new Vue({
     data () {
         return {
             name: 'Bitcoin',
+            symbol: 'BTC',
             img: './img/bitcoin-btc-logo.png',
             changePercent: -10,
             prices: [8400, 7900, 8200, 9000, 9400, 10000, 10200],
@@ -18,9 +19,29 @@ new Vue({
             ],
             precio: 8400,
             showPrices: false,
-            color: '9b9e9b'
+            color: 'f4f4f4'
         }
     },
+    
+    /** PROPIEDADES COMPUTADAS (Computed Properties)*/
+    computed: {
+        title () {
+            return `${this.name} - ${this.symbol}`;
+        }
+    },
+
+    /** WATCHERS
+     * El nombre de la funcion debe corresponder a una propiedad de data
+     * Recibe dos valores:
+     * $ newValue
+     * $ oldValue
+    */
+    watch: {
+        showPrices (newValue, oldValue) {
+            console.log(newValue, oldValue);
+        }
+    },
+
     /** ES UNA PROPIEDAD DE LA INSTANCIA DE VUE, 
      * QUE ES UN OBJETO DONDE PUEDO DEFINIR FUNCIONES.
      */
@@ -28,7 +49,7 @@ new Vue({
         toggleShowPrices () {
             this.showPrices = !this.showPrices;
 
-            this.color = this.color.split('').reverse().join('')
+            this.color = this.color.split('').reverse().join('');
         }
     }
 });

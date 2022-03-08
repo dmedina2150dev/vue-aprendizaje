@@ -16,7 +16,7 @@
             v-bind:alt="name">
 
         <h1 v-bind:class="changePercent > 0 ? 'green' : 'red'">
-            {{ name }}
+            {{ title }}
 
             <!-- ESTAS DIRECTIVAS REMUEVEN EL ELEMENTOS DEL DOM -->
             <span v-if="changePercent > 0">🤑</span>
