@@ -58,6 +58,12 @@
                 {{ i }} - {{ p.day }} - {{ p.value }}
             </li>
         </ul>
+        
+        <input type="number" v-model="value">
+        <br>
+        <span>{{ value }}</span>
+        <br>
+        <span>{{ convertedValue }}</span>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>

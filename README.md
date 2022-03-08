@@ -84,7 +84,7 @@ $ </ul>
 
 ***Igual usa los dos punto y dentro el nombre del evento [v-on:click="nombre-funcion"]***
 
-## Computed Properties and Watchers
+## Computed Properties
 > Son las propiedades que se generan o calculan en tiempo real a partir de otras porpiedades, es decir que algún propiedad definida en data que al modificarse van a permitir generar un nuevo valor sobre otra propiedad. **son funciones que siempre devuelven un valor**
 
 **Una propiedad computada dentro de una vista se usa como una propiedad de data**
@@ -92,3 +92,6 @@ $ </ul>
 
 ## Watchers
 > Los [Watchers] tienen un comportamiento similiar al de las propiedades computadas, pero en vez de ser funciones que devuelven un valor son **Son funciones que ejecutan un codigo**, es decir que a traves de un cambio o de la observacion de una variable puedo ejecutar determinado codigo o una funcion. **El nombre de la funcion debe corresponder a una propiedad de data**
+
+## Two-Way Data Binding
+> Es lo que permite la comunicacion entre los eventos que esta generando el usuario y alguna propiedad definida en [data].
