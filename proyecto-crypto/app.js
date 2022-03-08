@@ -62,6 +62,9 @@ Vue.component('CoinDetail', {
             
             <input type="number" v-model="value">
             <span>{{ convertedValue }}</span>
+
+            <slot name="text"></slot>
+            <slot name="link"></slot>
             
             <ul v-show="showPrices">
             <li

@@ -104,3 +104,40 @@ $ </ul>
 > Del componente padre al componente hijo es mediante propiedades **props**
 
 > Del componente hijo al componente padre mediante eventos **this.$emit('')**
+
+## Slots
+> Es una api de distribucion de contenido, que permite que un componente padre le inyecte contenido HTML a un componente hijo.
+
+**Se usa un tag para indicar donde el padre podra inyectar el contenido**
+
+```
+$ <slot></slot>
+$ // Esto se coloca en el template del componente
+$
+$ // En el padre
+$ <ejemplo> <!-- componente hijo invocado desde el padre -->
+$   <p> Esto es un texto del padre al hijo </p>
+$ </ejemplo>
+```
+
+***Es posible que se requiera agrgar mas de un slot a un componente por lo que se deben utilizar los [name-slot]***
+
+> Cabe destacar que para utilizar los name slot se deben utilizar con el tag [<template></template>] este tag nos permite renderizar contenido sin necesidad de incluir tag. Es decir que al momento de renderizar Vuejs eliminara el [<template>] y solo quedara el [<p>] como en el ejemplo de abajo: 
+
+**De igual forma se utiliza la directiva [v-slot:name-slot]**
+```
+$ <slot name="texto"></slot>
+$ <slot name="link"></slot>
+$
+$ // en el padre
+$ <ejemplo> <!-- componente -->
+$   <template v-slot:texto>
+$       <p> textoooooooooooooooooooooooo </p>
+$   </template>
+$   <template v-slot:link>
+$      <a href="#">Link</a>
+$   </template>
+$
+$ </ejemplo>
+```
+**CUALQUIER HTML VALIDO ES FACTIBLE PODER INYECTARLO MEDIANDO UN SLOT**

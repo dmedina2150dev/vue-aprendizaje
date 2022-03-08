@@ -70,6 +70,14 @@
         <coin-detail
             v-bind:coin="eth"
             v-on:change-color="changeColor">
+
+            <template v-slot:text>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque officiis ducimus illo enim provident vitae in sint pariatur voluptatem nihil. Soluta blanditiis fugit quidem incidunt, iste ad quo facilis consequuntur?</p>
+            </template>
+
+            <template v-slot:link>
+                <a href="#">Link</a>
+            </template>
         </coin-detail>
     </div>
 
