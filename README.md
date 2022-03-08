@@ -122,7 +122,7 @@ $ </ejemplo>
 
 ***Es posible que se requiera agrgar mas de un slot a un componente por lo que se deben utilizar los [name-slot]***
 
-> Cabe destacar que para utilizar los name slot se deben utilizar con el tag [**<template></template>**] este tag nos permite renderizar contenido sin necesidad de incluir tag. Es decir que al momento de renderizar Vuejs eliminara el [**<template>**] y solo quedara el [**<p>**] como en el ejemplo de abajo: 
+> Cabe destacar que para utilizar los name slot se deben utilizar con el tag **<template></template>** este tag nos permite renderizar contenido sin necesidad de incluir tag. Es decir que al momento de renderizar Vuejs eliminara el **<template>** y solo quedara el **<p>** como en el ejemplo de abajo: 
 
 **De igual forma se utiliza la directiva [v-slot:name-slot]**
 ```
