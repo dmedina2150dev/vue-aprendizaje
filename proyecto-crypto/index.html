@@ -64,6 +64,13 @@
         <span>{{ value }}</span>
         <br>
         <span>{{ convertedValue }}</span>
+
+        <br>
+        <h2>Toda la aplicacion como un componente</h2>
+        <coin-detail
+            v-bind:coin="eth"
+            v-on:change-color="changeColor">
+        </coin-detail>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>

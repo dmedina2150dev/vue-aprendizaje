@@ -95,3 +95,12 @@ $ </ul>
 
 ## Two-Way Data Binding
 > Es lo que permite la comunicacion entre los eventos que esta generando el usuario y alguna propiedad definida en [data].
+
+
+## Web components
+> Permite modularizar la aplicacion en pequeños trozos de codigo Html, Css y JavaScript, para poder tener un codigo mas legible y mas semantico. Cada componente que puede ser utilizado a lo largo del proyecto tiene todo lo que necesita, tiene su logica, su diseño y su estructura.
+
+### Comunicación entre componentes
+> Del componente padre al componente hijo es mediante propiedades **props**
+
+> Del componente hijo al componente padre mediante eventos **this.$emit('')**
