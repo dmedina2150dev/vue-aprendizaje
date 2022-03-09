@@ -174,3 +174,6 @@ $ npm install -g @vue/cli
 $ // En la terminal
 $ vue create project-name
 ```
+
+## Single File Component (componentes escritos en Archivos)
+> Son archivos [.vue] que nos ofrece el framework, para poder trabajar con la logica, con el css, y con el template Html dentro de un mismo componente.
