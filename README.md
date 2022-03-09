@@ -149,3 +149,28 @@ $ </ejemplo>
 **[created] se puede utilizar para traer información de una api porque es el primero que se crea**
 
 **[mounted] ya esta disponible la api del DOM y se puede utilizar para acceder a elementos HTML y manipularlos**
+
+
+## Devtools for Ghrome
+> Esta extención para las devtools del navegador esta tanto para Google Ghrome como para Firefox **[https://devtools.vuejs.org/guide/installation.html]**
+
+## Extensiones de Vscode
+[1.] **https://github.com/vuejs/vetur**
+[2.] **https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint**
+[3.] **https://prettier.io/**
+
+## @vue/cli [https://cli.vuejs.org/]
+> Es una herramienta de desarrollo que nos permite generar el scaffolding o la estructura basica de una apicación de VueJs. Con la premisa de reducir todo el esfuerzo de configuración y que podamos tener el proyecto listo para trabajar lo mas rapido posible. 
+
+**Para instalar el cli de VUE**
+```
+$ // En la terminal
+$ npm install -g @vue/cli
+```
+
+**Para crear un nuevo proyecto nuevo**
+
+```
+$ // En la terminal
+$ vue create project-name
+```
