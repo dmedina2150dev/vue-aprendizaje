@@ -13,7 +13,13 @@ Vue.component('CoinDetail', {
             value: 0
         }
     },
+    created() {
+        console.log('Created coinDetal...')
+    },
 
+    mounted () {
+        console.log('Mounted coinDetal...')
+    },
     methods: {
         toggleShowPrices () {
             this.showPrices = !this.showPrices;
@@ -47,7 +53,7 @@ Vue.component('CoinDetail', {
                 v-on:mouseout="toggleShowPrices"
                 v-bind:src="coin.img"
                 v-bind:alt="coin.name">
-            <h1 v-bind:class="changePercent > 0 ? 'green' : 'red'">
+            <h1 v-bind:class="coin.changePercent > 0 ? 'green' : 'red'">
                 {{ title }}
 
                 <!-- ESTAS DIRECTIVAS REMUEVEN EL ELEMENTOS DEL DOM -->
@@ -90,7 +96,7 @@ new Vue({
                 name: 'ethereum',
                 symbol: 'ETH',
                 img: './img/ethereum.webp',
-                changePercent: -10,
+                changePercent: 10,
                 precio: 10000,
                 pricesWithDays: [
                     { day: 'Lunes', value: 8400 },
@@ -121,6 +127,13 @@ new Vue({
             color: 'f4f4f4',
             value: 0
         }
+    },
+    created() {
+        console.log('Created...')
+    },
+
+    mounted () {
+        console.log('Mounted...')
     },
     
     /** PROPIEDADES COMPUTADAS (Computed Properties)*/

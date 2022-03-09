@@ -141,3 +141,11 @@ $
 $ </ejemplo>
 ```
 **CUALQUIER HTML VALIDO ES FACTIBLE PODER INYECTARLO MEDIANDO UN SLOT**
+
+
+## Live cicle Hooks
+> Ciclo de vida y hooks, son diferentes eventos que podemos representar en nuestro componente a traves de funciones y podemos disparar codigo a medida que nuestro componente vaya transitando por diferentes etapas, como por ejemplo cuando el componente se crea podriamos disparar alguna función o cuando el componente se destruye, o se actualiza podemos atacharnos a estos eventos. [https://v2.vuejs.org/v2/guide/instance.html#Lifecycle-Diagram]
+
+**[created] se puede utilizar para traer información de una api porque es el primero que se crea**
+
+**[mounted] ya esta disponible la api del DOM y se puede utilizar para acceder a elementos HTML y manipularlos**
