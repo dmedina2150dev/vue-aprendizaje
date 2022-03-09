@@ -177,3 +177,25 @@ $ vue create project-name
 
 ## Single File Component (componentes escritos en Archivos)
 > Son archivos [.vue] que nos ofrece el framework, para poder trabajar con la logica, con el css, y con el template Html dentro de un mismo componente.
+
+# serve
+> Es una dependencia que podemos instalar globalmente que nos da un servidor local donde podemos probar las aplicaciones construidas con **npm run build**
+
+```
+$ // para instalar 
+$ npm i -g serve
+$ 
+$ // para correr posicionarme en el proyecto
+$ serve -s dist 
+$ // la carpeta dist hace refrerencia a donde se build el proyecto  para producción
+```
+
+# Vue UI
+> Permite generar una pequeña aplicación web local, con una interfaz de usuario amigable, permite gestionar los proyectos. Donde se podran importar todos los proyectos creados en Vuejs. Cuenta con un set de funcionalidades, donde podemos gestionar las dependencias, los plugings al igual que instalarlos, como otras cosas del proyecto.
+
+```
+$ // en la terminar
+$ vue ui
+```
+
+
