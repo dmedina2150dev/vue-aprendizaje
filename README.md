@@ -198,4 +198,11 @@ $ // en la terminar
 $ vue ui
 ```
 
+# Vue add
+> Es un comando de Vuejs que nos permite agregar plugings a nuestros proyectos.
+
+```
+$ vue add [paquete-dependencia]
+
+```
 
